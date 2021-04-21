@@ -23,7 +23,7 @@ function* asyncAddTodo(action){
         yield put({type: "ADD_TODO", payload: {text}});
     }catch(err){
         // when the API returns an error it cames here
-        console.log(err)
+        alert(err)
     }
 }
 
